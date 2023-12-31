@@ -66,7 +66,7 @@ const Header = () => {
             <Button href="#services" style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Services</Button>
           
           
-            <Button style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Contact</Button>
+            <Button href="#social-media" style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Contact</Button>
           
         </Box>
       </Box>

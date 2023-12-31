@@ -612,7 +612,28 @@ const Home = () => {
               </Sheet>
             </main>
             </CssVarsProvider>
+            
             <hr id="social-media" style={{width: '65%', border: 'double', color: 'rgba(170, 75, 110, 0.75)', margin: "auto"}}/>
+            <Sheet
+                sx={{
+                  width: 800,
+                  mx: 'auto', // margin left & right
+                  my: 2, // margin top & bottom
+                  py: 3, // padding top & bottom
+                  px: 2, // padding left & right
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: 2,
+                  borderRadius: 'sm',
+                  boxShadow: 'md',
+                  textAlign: 'center',
+                  backgroundColor: "rgba(0, 0, 128, 0.5)",
+                  border: 'double',
+                  borderColor: 'rgba(170, 75, 110, 0.75)',
+                  borderWidth: "5px"
+                }}
+                variant="outlined"
+              > <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier"}}>Contact Information</h1></Sheet>
             <Footer/>
             </>
             )};
