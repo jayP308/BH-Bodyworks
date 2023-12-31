@@ -10,22 +10,17 @@ html, body {
 
 
 body {
-    background-image: url('./assets/images/massage-therapy.jpg');
+    background-image: url('./assets/images/FullLogo.png');
     background-repeat: none;
     background-size: cover;
     background-attachment: fixed;
 }
-
 .App {
-    height: auto;
-    border-left: solid;
-    border-right: solid;
-    border-width: 25px;
-    border-left-width: 200px;
-    border-right-width: 200px;
-    border-color: rgba(10, 92, 51, 0.699);
-    background-color:rgba(190, 190, 161, 0.699);
-  
+    border: solid;
+    border-left-width: 100px;
+    border-right-width: 100px;
+    border-color: transparent;
+    background-color:transparent;
 }
 
 @media screen and (min-device-width: 320px)

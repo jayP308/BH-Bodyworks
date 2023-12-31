@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography } from '@mui/joy';
-import Header from "../components/Header"
+import Header from "../components/Header_1"
 import Sheet from '@mui/joy/Sheet';
 import Footer from '../components/Footer';
 

@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../components/Header";
+import Header from "../components/Header_1.js";
 import Sheet from "@mui/joy/Sheet/Sheet";
-import logoImage from "../assets/images/updated-logo4.png";
+import logoImage from "../assets/images/video_full.gif";
 import { Typography } from "@mui/joy";
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -17,6 +17,7 @@ import dividerImg from '../assets/images/divider.png';
 import logoOne from "../assets/images/updated-logo4.png";
 import { CssVarsProvider } from "@mui/joy";
 import { useMediaQuery } from 'usehooks-ts'
+import Services from "../pages/Services.js"
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -84,17 +85,16 @@ const Home = () => {
       {matches ? (
         <>
             <div style={{ display: 'block', justifyContent: "center", alignItems: "center", margin: 'auto',}}>
+           
                 <Sheet
                     sx={{
-                    width: "50%",
-                    mx: 'auto', // margin left & right
-                    my: 3, // margin top & bottom
+                    width: "100%",
                     display: 'flex',
                     flexDirection: 'column',
                     background: 'transparent',
                 }}
                 >
-                    <img src={logoImage} alt="green lotus with tag nghi yo massage" />
+                  
                 </Sheet>
 
                 <Sheet
@@ -357,8 +357,9 @@ const Home = () => {
         <>
             <div style={{ display: 'block', justifyContent: "center", alignItems: "center", margin: 'auto',}}>
                 <Sheet
-                    sx={{
-                    width: "20%",
+                    style={{
+                    width: "50%",
+                    margin: "auto",
                     mx: 'auto', // margin left & right
                     my: 3, // margin top & bottom
                     display: 'flex',
@@ -366,43 +367,11 @@ const Home = () => {
                     background: 'transparent',
                 }}
                 >
-                    <img src={logoImage} alt="green lotus with tag nghi yo massage" />
-                </Sheet>
-
-                <Sheet
-                    sx={{
-                    width: "50%",
-                    mx: 'auto', // margin left & right
-                    my: 5, // margin top & bottom
-                    py: 3, // padding top & bottom
-                    px: 3, // padding left & right
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: 3,
-                    borderRadius: 'sm',
-                    background: "#c0c0c0", // Add this line
-                    textAlign:'center',
-                    backgroundColor: 'rgba(182, 182, 158, 0.671)',
-                    border: 'double',
-                    borderColor: 'rgba(10, 92, 51, 0.699)',
-                    borderWidth: "5px", 
-                    color: "black",
-                }}
-                >
-                    <Typography style={{ fontWeight: "10px", fontSize: "45px", }}>Nghi Vo</Typography>
-                    <Typography style={{ fontWeight: "10px", fontSize: "25px", }}>(Massage Therapist Student)</Typography>
-                    
-                    <Typography style={{ fontSize: '20px', fontFamily: 'monospace', padding:'20px', fontStyle: 'oblique'}}>
-                    My journey into massage therapy has been both fascinating and fulfilling. 
-                    As a student in this field, I'm passionate about using the power of touch to help people find relief from physical discomfort and stress. 
-                    Learning the art of massage has given me a deep appreciation for the body's ability to heal itself and the importance of maintaining a mind-body connection. 
-                    I look forward to using my skills to make a positive impact on the lives of others, one soothing massage at a time.
-                    </Typography>
-                    <img src={dividerImg} alt='golden line with diamond shape in the middle' style={{width: '100%', height: 'auto'}} />
+                   
                 </Sheet>
             </div>
             
-            <hr id="type-of-massages" style={{width: '65%', border: 'double', color: 'green', margin: "auto"}}/>
+            <hr id="type-of-massages" style={{width: '65%', border: 'double', color: "rgba(170, 75, 110, 0.75)", margin: "auto"}}/>
             <Sheet
                 sx={{
                   width: 800,
@@ -416,13 +385,13 @@ const Home = () => {
                   borderRadius: 'sm',
                   boxShadow: 'md',
                   textAlign: 'center',
-                  backgroundColor: 'rgba(182, 182, 158, 0.671)',
+                  backgroundColor: "rgba(0, 0, 128, 0.5)",
                   border: 'double',
-                  borderColor: 'rgba(10, 92, 51, 0.699)',
+                  borderColor: 'rgba(170, 75, 110, 0.75)',
                   borderWidth: "5px"
                 }}
                 variant="outlined"
-              > <h1 style={{ fontWeight: "10px", fontSize: "45px", WebkitTextStroke: '.75px #1fc600', WebkitTextFillColor: 'black', }}>Type of Massages</h1></Sheet>
+              > <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier"}}>Massage Information</h1></Sheet>
             <div
              style={{
               display: 'flex',
@@ -447,8 +416,8 @@ const Home = () => {
                   marginBottom: "50px",
                   marginRight: '50px',
                   border: 'double',
-                  background: 'rgb(184, 184, 152)',
-                  borderColor: 'rgba(10, 92, 51, 0.699)',
+                  backgroundColor: "rgba(0, 0, 128, 0.5)",
+                  borderColor: 'rgba(170, 75, 110, 0.75)',
                   borderWidth: "5px",
                   }}>
 
@@ -460,7 +429,7 @@ const Home = () => {
                         alignItems: 'center',
                         height: 50,
                         margin: 'auto',
-                        background: "linear-gradient(to bottom, green, rgba(190, 190, 161, 0.616), rgba(182, 182, 158, 0.671))",
+                        backgroundColor: "rgba(0, 0, 128, 0.5)",
                         justifyContent: 'center',
                         padding: '20px'
                         }}
@@ -499,7 +468,7 @@ const Home = () => {
                       position="static"
                       activeStep={activeStep}
                       style={{
-                        background: "linear-gradient(to top, green, rgba(190, 190, 161, 0.616), rgba(182, 182, 158, 0.671))",
+                        backgroundColor: "rgba(0, 0, 128, 0.5)",
                       }}
                       
                       nextButton={
@@ -507,6 +476,7 @@ const Home = () => {
                           size="small"
                           onClick={handleNext}
                           disabled={activeStep === maxSteps - 1}
+                          style={{color: "rgb(144, 238, 144)"}}
                       >
                           Next
                           {theme.direction === 'rtl' ? (
@@ -517,7 +487,7 @@ const Home = () => {
                       </Button>
                       }
                       backButton={
-                      <Button size="small" onClick={handleBack} disabled={activeStep === 0} >
+                      <Button size="small" onClick={handleBack} disabled={activeStep === 0} style={{color: "rgb(144, 238, 144)"}} >
                           {theme.direction === 'rtl' ? (
                           <KeyboardArrowRight />
                           ) : (
@@ -536,8 +506,8 @@ const Home = () => {
                   marginTop: "50px",
                   marginBottom: "50px",
                   border: 'double',
-                  backgroundColor: 'rgba(182, 182, 158, 0.671)',
-                  borderColor: 'rgba(10, 92, 51, 0.699)',
+                  backgroundColor: "rgba(0, 0, 128, 0.5)",
+                  borderColor: 'rgba(170, 75, 110, 0.75)',
                   borderWidth: "5px",
                   }}>
                   <Paper
@@ -548,12 +518,12 @@ const Home = () => {
                       alignItems: 'center',
                       height: 50,
                       margin: 'auto',
-                      background: "linear-gradient(to bottom, green, rgba(190, 190, 161, 0.616), rgba(182, 182, 158, 0.671))",
+                      backgroundColor: "rgba(0, 0, 128, 0.5)",
                       justifyContent: 'center',
                       padding: '20px'
                       }}
                   >
-                      <Typography style={{fontFamily: 'monospace', fontSize: '20px',}}>{images.label}</Typography>
+                      <Typography style={{fontFamily: 'monospace', fontSize: '20px', color: "rgb(144, 238, 144)"}}>{images.label}</Typography>
                   </Paper>
                   
                       <AutoPlaySwipeableViews
@@ -578,15 +548,17 @@ const Home = () => {
                                   fontFamily: 'monospace',
                                   fontSize: '15px',
                                   padding: '5px',
+                                  color: "rgb(144, 238, 144)"
                               }}
                               ><span
                                 style={{
                                   display: "block",
                                   padding: "20px",
                                   fontSize: '30px',
+                                  color: "rgb(144, 238, 144)"
                                 }}
                               >{step.label}</span>
-                               <img src={dividerImg} alt='golden line with diamond shape in the middle' style={{width: '100%', height: 'auto', padding: '5px'}} />
+                               <img src={dividerImg} alt='golden line with diamond shape in the middle' style={{width: '100%', height: 'auto', padding: '5px', color: "rgb(144, 238, 144)"}} />
                                 {step.descriptions}
                               
                               </Box>
@@ -600,7 +572,7 @@ const Home = () => {
                       position="static"
                       activeStep={activeStep}
                       style={{
-                          background: "linear-gradient(to top, green, rgba(190, 190, 161, 0.616), rgba(182, 182, 158, 0.671))",
+                        backgroundColor: "rgba(0, 0, 128, 0.5)",
                           justifyContent: 'center',
                           padding: '20px'
                            // Add this line
@@ -609,7 +581,7 @@ const Home = () => {
                   />
               </Box>
             </div>
-            <hr id="services" style={{width: '65%', border: 'double', color: 'green', margin: "auto"}}/>
+            <hr id="services" style={{width: '65%', border: 'double', color: 'rgba(170, 75, 110, 0.75)', margin: "auto"}}/>
             <CssVarsProvider>
             <main>
               <Sheet
@@ -625,56 +597,22 @@ const Home = () => {
                   borderRadius: 'sm',
                   boxShadow: 'md',
                   textAlign: 'center',
-                  backgroundColor: 'rgba(182, 182, 158, 0.671)',
+                  backgroundColor: "rgba(0, 0, 128, 0.5)",
                   border: 'double',
-                  borderColor: 'rgba(10, 92, 51, 0.699)',
+                  borderColor: 'rgba(170, 75, 110, 0.75)',
                   borderWidth: "5px"
                 }}
                 variant="outlined"
               >
-                <h1 style={{ fontWeight: "10px", fontSize: "45px", WebkitTextStroke: '.75px #1fc600', WebkitTextFillColor: 'black', }}>Services</h1>
-                <hr style={{width: '65%', border: 'double', color: 'green', margin: "auto", marginBottom: '15px'}}/>
-                <div>
-                  <img src={logoOne} alt="website logo of lotus" style={{ width: '50%', margin: "auto",}} />
-                </div>
-                <Typography sx={{ fontWeight: "10px", fontSize: "30px", WebkitTextStroke: '.75px #1fc600', WebkitTextFillColor: 'black', color: 'black' }}>
-                    <b>Modalities</b>
-                </Typography>
-                <Typography sx={{ fontSize: "20px", color: 'black' }}>
-                    <b>Includes: </b>
-                </Typography>
-                <Typography sx={{ fontSize: "20px", color: 'black' }}>
-                    <b>( Sports Massage, Shiatsu Massage, and Reflexology )</b>
-                </Typography>
-                <Typography sx={{ fontWeight: "10px", fontSize: "30px", WebkitTextStroke: '.75px #1fc600', WebkitTextFillColor: 'black', }}>
-                    <b>Chair Massage</b>
-                </Typography>
-                <Typography sx={{ fontWeight: "10px", fontSize: "30px", WebkitTextStroke: '.75px #1fc600', WebkitTextFillColor: 'black', }}>
-                    <b>Foot Massage</b>
-                </Typography>
-                <Typography sx={{ fontWeight: "10px", fontSize: "30px", WebkitTextStroke: '.75px #1fc600', WebkitTextFillColor: 'black', }}>
-                    <b>Add-ons</b>
-                </Typography>
-                <div style={{ display: "block", margin: "auto"}}>
-                <Typography sx={{ fontSize: "20px", color: 'black' }}>
-                      <b> Swedish Massage</b>
-                  </Typography>
-                  <Typography sx={{ fontSize: "20px", color: 'black' }}>
-                      <b> Deep Tissue Massage</b>
-                  </Typography>
-                  <Typography sx={{ fontSize: "20px", color: 'black' }}>
-                      <b> Reflexology</b>
-                  </Typography>
-                  <Typography sx={{ fontSize: "20px", color: 'black' }}>
-                      <b> Scalp Massage</b>
-                  </Typography>
-                </div>
+                <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier"}}>Services</h1>
+                <hr style={{width: '65%', border: 'double', color: 'rgba(170, 75, 110, 0.75)', margin: "auto", marginBottom: '15px'}}/>
+                <Services/>
                 <img src={dividerImg} alt='golden line with diamond shape in the middle' style={{width: '100%', height: 'auto', padding: '15px'}} />
                 
               </Sheet>
             </main>
             </CssVarsProvider>
-            <hr id="social-media" style={{width: '65%', border: 'double', color: 'green', margin: "auto"}}/>
+            <hr id="social-media" style={{width: '65%', border: 'double', color: 'rgba(170, 75, 110, 0.75)', margin: "auto"}}/>
             <Footer/>
             </>
             )};
