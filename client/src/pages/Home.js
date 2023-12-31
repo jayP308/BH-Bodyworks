@@ -586,7 +586,7 @@ const Home = () => {
             <main>
               <Sheet
                 sx={{
-                  width: 800,
+                  width: "75%",
                   mx: 'auto', // margin left & right
                   my: 4, // margin top & bottom
                   py: 3, // padding top & bottom
@@ -607,7 +607,7 @@ const Home = () => {
                 <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier"}}>Services</h1>
                 <hr style={{width: '65%', border: 'double', color: 'rgba(170, 75, 110, 0.75)', margin: "auto", marginBottom: '15px'}}/>
                 <Services/>
-                <img src={dividerImg} alt='golden line with diamond shape in the middle' style={{width: '100%', height: 'auto', padding: '15px'}} />
+                
                 
               </Sheet>
             </main>

@@ -57,17 +57,17 @@ const Header = () => {
           }}
         >
         <Link to="/blissful-essence-therapeutic-healing">
-            <Button sx={{ minWidth: 120 }}>Home</Button>
+            <Button style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Home</Button>
           </Link>
          
-            <Button href="#type-of-massages"sx={{ minWidth: 120 }}>Massage Info</Button>
+            <Button href="#type-of-massages" style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Massage Info</Button>
          
           
-            <Button href="#services" sx={{ minWidth: 120 }}>Services</Button>
+            <Button href="#services" style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Services</Button>
           
-          <Link to="/contacts">
-            <Button sx={{ minWidth: 120 }}>Contact</Button>
-          </Link>
+          
+            <Button style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Contact</Button>
+          
         </Box>
       </Box>
       <Box
