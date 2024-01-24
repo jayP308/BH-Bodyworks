@@ -28,7 +28,7 @@ const Header = () => {
         overflow: 'hidden',
         '& button': { borderRadius: 'xl' },
         height: "500px",
-        backgroundColor: "rgba(0, 0, 128, 0.5)"
+        backgroundColor: "rgba(0, 0, 128, 0.8)"
       }}
     >
         
@@ -60,13 +60,11 @@ const Header = () => {
             <Button style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Home</Button>
           </Link>
          
-            <Button href="#type-of-massages" style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Massage Info</Button>
-         
-          
-            <Button href="#services" style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Services</Button>
+    
+            <Button href="#services" style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Services & Appointments</Button>
           
           
-            <Button href="#social-media" style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Contact</Button>
+            <Button href="#social-media" style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Contact Information</Button>
           
         </Box>
       </Box>

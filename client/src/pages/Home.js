@@ -23,40 +23,29 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: 'Sports Massage',
-    imgPath:
-      'https://cdn.pixabay.com/photo/2017/09/20/14/59/massage-2768833_960_720.jpg',
-    descriptions: "Sports massage is a targeted form of therapy that uses various techniques like deep tissue and stretching to enhance athletic performance, reduce muscle tension, improve flexibility, and aid in injury prevention and recovery. It's particularly beneficial for athletes, as it helps with circulation, pain relief, and stress reduction, ultimately optimizing physical well-being and sports performance.",
+    label: 'Mathias Sather',
+    
+    descriptions: "`Bethany was the best!`",
   },
   {
-    label: 'Shiatsu Massage',
-    imgPath:
-      'https://media.istockphoto.com/id/1456027414/photo/neck-massage.webp?b=1&s=170667a&w=0&k=20&c=-crVT9ZQoA5riC0go6dMDiDe_Ll4-Z_mp2ZkRLPaqrQ=',
-    descriptions: "Shiatsu massage is a Japanese bodywork therapy that involves applying pressure to specific points on the body using fingers, thumbs, and palms. This technique aims to balance the body's energy flow, or 'qi', and promote relaxation and well-being. Shiatsu is often performed on a floor mat and combines stretches and joint rotations with pressure point work, making it a holistic therapy that can help relieve stress, alleviate muscle tension, and improve overall health by enhancing the body's natural healing abilities."
+    label: 'Pedro Tanure',
+    
+    descriptions: "`This place is excellent. I had a 25-minute sesion with Bethany and really enjoyed it. Highly recommend it!`"
     },
   {
-    label: 'Reflexology',
-    imgPath:
-      'https://media.istockphoto.com/id/611744200/photo/foot-massage.webp?b=1&s=170667a&w=0&k=20&c=TJNDO9xETDkWJEeHCiYCqmqta-UYXBEkqg9Ufqs7E5k=',
-    descriptions: "Reflexology is a holistic therapeutic practice that involves applying pressure to specific points on the feet, hands, or ears, known as reflex points, which correspond to various organs and systems in the body. By stimulating these reflex points, reflexologists aim to promote relaxation, reduce stress, and improve overall well-being. This ancient technique is based on the principle that specific areas on the feet, hands, or ears are connected to other parts of the body, and by manipulating these points, it can help alleviate tension, enhance circulation, and support the body's natural healing processes.",
-    },
-  {
-    label: 'Swedish Massage',
-    imgPath:
-      'https://media.istockphoto.com/id/121673933/photo/massage.jpg?s=612x612&w=0&k=20&c=B6T43QicaCXTOhBTMGbLxkpD2P2nXhTjDW_8q7gWITY=',
-    descriptions: "Swedish massage is a widely practiced therapeutic technique that uses a combination of long gliding strokes, kneading, friction, tapping, and gentle stretching to promote relaxation and alleviate muscle tension. It is characterized by its soothing and rhythmic movements, making it an ideal choice for those seeking stress relief and relaxation. Swedish massage can also improve circulation, reduce muscle soreness, and enhance overall physical and mental well-being."
+    label: 'Karl Boardman',
+    
+    descriptions: "`Bethany is great. Going weekly has helped my lower back pain majorly`"
   },
   {
-    label: 'Deep Tissue Massage',
-    imgPath:
-      'https://media.istockphoto.com/id/1251958800/photo/physical-therapist-pressing-or-pushing-on-lower-back-maknig-deep-massage.webp?b=1&s=170667a&w=0&k=20&c=yaSGmyWBrLznvU2F5i0Crwwn32a7bLuqkbDlXdlIYTk=',
-    descriptions: "Deep tissue massage is an intensive therapeutic technique that focuses on reaching the deeper layers of muscle and connective tissue. This massage style uses firm pressure, slow strokes, and concentrated friction to target chronic tension, knots, and adhesions in the muscles. Deep tissue massage is particularly effective for individuals with chronic pain, muscle tightness, or injuries. It aims to break down scar tissue, improve range of motion, and provide relief from deep-seated muscle discomfort, making it a valuable choice for those seeking deep muscle relaxation and pain relief.",
+    label: 'Dave M.',
+   
+    descriptions: "`When it comes to health and wellness, I believe StretchLab Embarcadero is absolutely essential. Bethany is amazing! Her knowledge of kinesiology is top notch. I really appreciate her guidance through the stretches. And after the session, I felt a significant improvement in mobility and well-being. Also want to acknowledge Mike. the awesome general manager. Big thanks to him for his help with everything!`",
   },
   {
-    label: 'Chair Massage',
-    imgPath:
-      'https://media.istockphoto.com/id/599867322/photo/physiotherapist-giving-back-massage-to-a-patient.webp?b=1&s=170667a&w=0&k=20&c=Hjjqq693xV9Yjzfpyjx2T0ku_pm4NaifFASE_qqiMYU=',
-    descriptions: "Chair massage is a convenient and compact form of massage therapy that typically takes place in a specially designed chair. During a chair massage, the recipient remains fully clothed and sits in a forward-leaning position while a massage therapist focuses on the neck, shoulders, back, and arms. This brief but effective massage technique aims to relieve tension and reduce stress in key areas of the body commonly affected by everyday activities and sedentary work. Chair massages are often found in workplaces, airports, and public events, offering a quick and accessible way to relax and rejuvenate without the need for a traditional massage table or disrobing.",
+    label: 'Brandon Reich',
+    
+    descriptions: "`Bethany is the best - I came in incredibly inflexible and generally not well versed in stretching. I feel like a new person!`",
   },
 ];
 
@@ -385,13 +374,13 @@ const Home = () => {
                   borderRadius: 'sm',
                   boxShadow: 'md',
                   textAlign: 'center',
-                  backgroundColor: "rgba(0, 0, 128, 0.5)",
+                  backgroundColor: "rgba(0, 0, 128, 0.8)",
                   border: 'double',
                   borderColor: 'rgba(170, 75, 110, 0.75)',
                   borderWidth: "5px"
                 }}
                 variant="outlined"
-              > <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier"}}>Massage Information</h1></Sheet>
+              > <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier" }}>Reviews</h1></Sheet>
             <div
              style={{
               display: 'flex',
@@ -409,66 +398,83 @@ const Home = () => {
             >
               <Typography style={{fontFamily: 'monospace', fontSize: '20px'}}></Typography>
               <Box sx={{ 
-                  width: "45%", 
+                  width: "100%", 
                   flexGrow: 1, 
                   margin: 'auto',
-                  marginTop: "50px",
-                  marginBottom: "50px",
-                  marginRight: '50px',
+                  marginTop: "40px",
+                  marginBottom: "40px",
+                  backgroundColor: "rgba(0, 0, 128, 0.8)",
                   border: 'double',
-                  backgroundColor: "rgba(0, 0, 128, 0.5)",
                   borderColor: 'rgba(170, 75, 110, 0.75)',
                   borderWidth: "5px",
+                  color: "rgb(144, 238, 144)"
                   }}>
-
-                    <Paper
-                        square
-                        elevation={0}
-                        style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        height: 50,
-                        margin: 'auto',
-                        backgroundColor: "rgba(0, 0, 128, 0.5)",
-                        justifyContent: 'center',
-                        padding: '20px'
-                        }}
-                      >
-                      <Typography style={{fontFamily: 'monospace', fontSize: '20px',}}></Typography>
-                      </Paper>
+                    
+                  <Paper
+                      square
+                      elevation={0}
+                      style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      height: 50,
+                      margin: 'auto',
+                      background: "linear-gradient(to bottom, rgba(170, 75, 110, 0.75), rgba(190, 190, 161, 0.616), rgba(0, 0, 128, 0.5))",
+                      justifyContent: 'center',
+                      padding: '10px'
+                      }}
+                  >
+                    <Typography style={{fontFamily: 'monospace', fontSize: '15px',}}>{images.label}</Typography>
+                  </Paper>
+                  
                       <AutoPlaySwipeableViews
                       axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                       index={activeStep}
-                      interval={10000}
+                      interval={15000}
                       onChangeIndex={handleStepChange}
                       enableMouseEvents
                       >
                       {images.map((step, index) => (
                           <div key={step.label}>
                           {Math.abs(activeStep - index) <= 2 ? (
+                            
                               <Box
-                              component="img"
-                              sx={{
-                                  height: 450,
+                              style={{
+                                  margin: 'auto',
+                                  height: 465,
                                   display: 'block',
                                   maxWidth: 800,
                                   overflow: 'hidden',
                                   width: '100%',
+                                  textAlign: "center",
+                                  fontFamily: 'monospace',
+                                  fontSize: '20px',
+                                  padding: '5px',
+                                  fontStyle: "italic"
                               }}
-                              src={step.imgPath}
-                              alt={step.label}
-                              />
+                              ><span
+                                style={{
+                                  display: "block",
+                                  padding: "20px",
+                                  fontSize: '50px',
+                                  fontStyle: 'normal',
+                                  marginBottom: "75px"
+                                }}
+                              >{step.label}</span>
+                               
+                                {step.descriptions}
+                              
+                              </Box>
                           ) : null}
-                         
                           </div>
                       ))}
                       </AutoPlaySwipeableViews>
-                  <MobileStepper
+                  
+                      <MobileStepper
                       steps={maxSteps}
                       position="static"
                       activeStep={activeStep}
                       style={{
-                        backgroundColor: "rgba(0, 0, 128, 0.5)",
+                        background: "linear-gradient(to top, rgba(170, 75, 110, 0.75), rgba(190, 190, 161, 0.616), rgba(0, 0, 128, 0.5))",
                       }}
                       
                       nextButton={
@@ -487,7 +493,7 @@ const Home = () => {
                       </Button>
                       }
                       backButton={
-                      <Button size="small" onClick={handleBack} disabled={activeStep === 0} style={{color: "rgb(144, 238, 144)"}} >
+                      <Button size="small" onClick={handleBack} disabled={activeStep === 0} style={{color: "rgb(144, 238, 144)"}}>
                           {theme.direction === 'rtl' ? (
                           <KeyboardArrowRight />
                           ) : (
@@ -499,94 +505,14 @@ const Home = () => {
                   />
               </Box>
 
-              <Box sx={{ 
-                  width: "45%", 
-                  flexGrow: 1, 
-                  margin: 'auto',
-                  marginTop: "50px",
-                  marginBottom: "50px",
-                  border: 'double',
-                  backgroundColor: "rgba(0, 0, 128, 0.5)",
-                  borderColor: 'rgba(170, 75, 110, 0.75)',
-                  borderWidth: "5px",
-                  }}>
-                  <Paper
-                      square
-                      elevation={0}
-                      style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      height: 50,
-                      margin: 'auto',
-                      backgroundColor: "rgba(0, 0, 128, 0.5)",
-                      justifyContent: 'center',
-                      padding: '20px'
-                      }}
-                  >
-                      <Typography style={{fontFamily: 'monospace', fontSize: '20px', color: "rgb(144, 238, 144)"}}>{images.label}</Typography>
-                  </Paper>
-                  
-                      <AutoPlaySwipeableViews
-                      axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-                      index={activeStep}
-                      interval={10000}
-                      onChangeIndex={handleStepChange}
-                      enableMouseEvents
-                      >
-                      {images.map((step, index) => (
-                          <div key={step.label}>
-                          {Math.abs(activeStep - index) <= 2 ? (
-                            
-                              <Box
-                              sx={{
-                                  height: 450,
-                                  display: 'block',
-                                  maxWidth: 800,
-                                  overflow: 'hidden',
-                                  width: '100%',
-                                  textAlign: "center",
-                                  fontFamily: 'monospace',
-                                  fontSize: '15px',
-                                  padding: '5px',
-                                  color: "rgb(144, 238, 144)"
-                              }}
-                              ><span
-                                style={{
-                                  display: "block",
-                                  padding: "20px",
-                                  fontSize: '30px',
-                                  color: "rgb(144, 238, 144)"
-                                }}
-                              >{step.label}</span>
-                               <img src={dividerImg} alt='golden line with diamond shape in the middle' style={{width: '100%', height: 'auto', padding: '5px', color: "rgb(144, 238, 144)"}} />
-                                {step.descriptions}
-                              
-                              </Box>
-                          ) : null}
-                          </div>
-                      ))}
-                      </AutoPlaySwipeableViews>
-                  
-                  <MobileStepper
-                      steps={maxSteps}
-                      position="static"
-                      activeStep={activeStep}
-                      style={{
-                        backgroundColor: "rgba(0, 0, 128, 0.5)",
-                          justifyContent: 'center',
-                          padding: '20px'
-                           // Add this line
-                      }}
-                      
-                  />
-              </Box>
+              
             </div>
             <hr id="services" style={{width: '65%', border: 'double', color: 'rgba(170, 75, 110, 0.75)', margin: "auto"}}/>
             <CssVarsProvider>
             <main>
               <Sheet
                 sx={{
-                  width: "75%",
+                  width: "100%",
                   mx: 'auto', // margin left & right
                   my: 4, // margin top & bottom
                   py: 3, // padding top & bottom
@@ -597,16 +523,31 @@ const Home = () => {
                   borderRadius: 'sm',
                   boxShadow: 'md',
                   textAlign: 'center',
-                  backgroundColor: "rgba(0, 0, 128, 0.5)",
+                  backgroundColor: "rgba(0, 0, 128, 0.8)",
                   border: 'double',
                   borderColor: 'rgba(170, 75, 110, 0.75)',
                   borderWidth: "5px"
                 }}
                 variant="outlined"
               >
-                <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier"}}>Services</h1>
+                <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier"}}>Services & Appointments</h1>
                 <hr style={{width: '65%', border: 'double', color: 'rgba(170, 75, 110, 0.75)', margin: "auto", marginBottom: '15px'}}/>
                 <Services/>
+                <Box sx={{ 
+                  width: "100%",
+                  flexGrow: 1, 
+                  margin: 'auto',
+                  marginTop: "50px",
+                  marginBottom: "50px",
+                  marginRight: '50px',
+                  border: 'double',
+                  backgroundColor: "white",
+                  borderColor: 'rgba(170, 75, 110, 0.75)',
+                  borderWidth: "5px",
+                  }}>
+                    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0U4cG8B6jPetIXO0a3fVjyLKMVU4nZCtmkfNizouttjEw9KaRJCRj_1se_Jrek8ptoMY7tnkdo?gv=true" style={{border: "0"}} width="100%" height="600" frameborder="0"></iframe>
+                </Box>
+                
                 
                 
               </Sheet>
@@ -627,7 +568,7 @@ const Home = () => {
                   borderRadius: 'sm',
                   boxShadow: 'md',
                   textAlign: 'center',
-                  backgroundColor: "rgba(0, 0, 128, 0.5)",
+                  backgroundColor: "rgba(0, 0, 128, 0.8)",
                   border: 'double',
                   borderColor: 'rgba(170, 75, 110, 0.75)',
                   borderWidth: "5px"

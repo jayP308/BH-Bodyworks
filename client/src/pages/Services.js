@@ -3,16 +3,13 @@ import AspectRatio from '@mui/joy/AspectRatio';
 import Button from '@mui/joy/Button';
 import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
-import IconButton from '@mui/joy/IconButton';
 import Typography from '@mui/joy/Typography';
-import BookmarkAdd from '@mui/icons-material/BookmarkAddOutlined';
-import Header from '../components/Header_1';
-import cuppingVideo from "../assets/images/cupping.gif"
 import oneOnOneVideo from "../assets/images/1-on-1 Stretching.gif"
 import neuroVideo from "../assets/images/neuromuscular-therapy.gif"
 import deepTissue from "../assets/images/Deep Tissue .gif"
 import cupping from "../assets/images/cupping.gif"
 import mobilityTraining from "../assets/images/mobility-training.gif"
+import { Link } from 'react-router-dom';
 
 export default function BasicCard() {
   return (
@@ -37,23 +34,7 @@ export default function BasicCard() {
           alt=""
         />
       </AspectRatio>
-      <CardContent orientation="horizontal">
-        <div>
-          <Typography sx={{color: "rgb(144, 238, 144)"}} level="body-xs">Price:</Typography>
-          <Typography sx={{color: "rgb(144, 238, 144)"}} fontSize="lg" fontWeight="lg">
-            TBD
-          </Typography>
-        </div>
-        <Button
-          variant="solid"
-          size="md"
-          color="primary"
-          aria-label="Explore Bahamas Islands"
-          sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}
-        >
-          Book Now!
-        </Button>
-      </CardContent>
+  
     </Card>
 
 
@@ -69,23 +50,6 @@ export default function BasicCard() {
           alt=""
         />
       </AspectRatio>
-      <CardContent orientation="horizontal">
-        <div>
-          <Typography sx={{color: "rgb(144, 238, 144)"}} level="body-xs">Price:</Typography>
-          <Typography sx={{color: "rgb(144, 238, 144)"}} fontSize="lg" fontWeight="lg">
-            TBD
-          </Typography>
-        </div>
-        <Button
-          variant="solid"
-          size="md"
-          color="primary"
-          aria-label="Explore Bahamas Islands"
-          sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}
-        >
-          Book Now!
-        </Button>
-      </CardContent>
     </Card>
 
     <Card sx={{ width: 320, backgroundColor: "rgba(170, 75, 110, 0.75)",}}>
@@ -100,23 +64,7 @@ export default function BasicCard() {
           alt=""
         />
       </AspectRatio>
-      <CardContent orientation="horizontal">
-        <div>
-          <Typography sx={{color: "rgb(144, 238, 144)"}} level="body-xs">Price:</Typography>
-          <Typography sx={{color: "rgb(144, 238, 144)"}} fontSize="lg" fontWeight="lg">
-            TBD
-          </Typography>
-        </div>
-        <Button
-          variant="solid"
-          size="md"
-          color="primary"
-          aria-label="Explore Bahamas Islands"
-          sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}
-        >
-          Book Now!
-        </Button>
-      </CardContent>
+      
     </Card>
 
     <Card sx={{ width: 320, backgroundColor: "rgba(170, 75, 110, 0.75)",}}>
@@ -131,23 +79,7 @@ export default function BasicCard() {
           alt=""
         />
       </AspectRatio>
-      <CardContent orientation="horizontal">
-        <div>
-          <Typography sx={{color: "rgb(144, 238, 144)"}} level="body-xs">Price:</Typography>
-          <Typography sx={{color: "rgb(144, 238, 144)"}} fontSize="lg" fontWeight="lg">
-            TBD
-          </Typography>
-        </div>
-        <Button
-          variant="solid"
-          size="md"
-          color="primary"
-          aria-label="Explore Bahamas Islands"
-          sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}
-        >
-          Book Now!
-        </Button>
-      </CardContent>
+      
     </Card>
 
     <Card sx={{ width: 320, backgroundColor: "rgba(170, 75, 110, 0.75)",}}>
@@ -162,23 +94,7 @@ export default function BasicCard() {
           alt=""
         />
       </AspectRatio>
-      <CardContent orientation="horizontal">
-        <div>
-          <Typography sx={{color: "rgb(144, 238, 144)"}} level="body-xs">Price:</Typography>
-          <Typography sx={{color: "rgb(144, 238, 144)"}} fontSize="lg" fontWeight="lg">
-            TBD
-          </Typography>
-        </div>
-        <Button
-          variant="solid"
-          size="md"
-          color="primary"
-          aria-label="Explore Bahamas Islands"
-          sx={{ ml: 'auto', alignSelf: 'center', fontWeight: 600 }}
-        >
-          Book Now!
-        </Button>
-      </CardContent>
+    
     </Card>
 
     </div>
