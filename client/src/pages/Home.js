@@ -30,7 +30,7 @@ const images = [
   {
     label: 'Pedro Tanure',
     
-    descriptions: "`This place is excellent. I had a 25-minute sesion with Bethany and really enjoyed it. Highly recommend it!`"
+    descriptions: "`This place is excellent. I had a 25-minute session with Bethany and really enjoyed it. Highly recommend it!`"
     },
   {
     label: 'Karl Boardman',
@@ -378,23 +378,26 @@ const Home = () => {
                   borderColor: 'transparent',
                 }}
                 variant="outlined"
-              > <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier" }}>Reviews</h1></Sheet>
+              > 
+              <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier" }}>Reviews</h1>
+                
+              </Sheet>
             <div
-             sx={{
-        flexGrow: 1,
-        display: 'flex',
-        p: { xs: '36px', md: '70px' },
-        pt: { xs: '24px', md: '60px' },
-        borderRadius: 'lg',
-        overflow: 'hidden',
-        '& button': { borderRadius: 'xl' },
-        height: "500px",
-        backgroundColor: "rgba(0, 0, 128, 0.8)"
-      }}
+                  sx={{
+                    flexGrow: 1,
+                    display: 'flex',
+                    p: { xs: '36px', md: '70px' },
+                    pt: { xs: '24px', md: '60px' },
+                    borderRadius: 'lg',
+                    overflow: 'hidden',
+                    '& button': { borderRadius: 'xl' },
+                    height: "500px",
+                    backgroundColor: "rgba(0, 0, 128, 0.8)"
+                  }}
             >
               <Typography style={{fontFamily: 'monospace', fontSize: '20px'}}></Typography>
               <Box sx={{ 
-                  width: "100%", 
+                  width: "80%",
                   flexGrow: 1, 
                   margin: 'auto',
                   marginTop: "40px",
@@ -514,7 +517,7 @@ const Home = () => {
             <main>
               <Sheet
                 sx={{
-                  width: "100%",
+                  width: "93%",
                   mx: 'auto', // margin left & right
                   my: 4, // margin top & bottom
                   py: 3, // padding top & bottom
@@ -526,8 +529,8 @@ const Home = () => {
                   boxShadow: 'md',
                   textAlign: 'center',
                   backgroundColor: "rgba(0, 0, 128, 0.8)",
-                  border: 'double',
-                  borderColor: 'rgba(170, 75, 110, 0.75)',
+                  borderRadius: '20px',
+                  borderColor: 'transparent',
                   borderWidth: "5px"
                 }}
                 variant="outlined"
@@ -542,9 +545,8 @@ const Home = () => {
                   marginTop: "50px",
                   marginBottom: "50px",
                   marginRight: '50px',
-                  border: 'double',
+                  borderRadius: '20px',
                   backgroundColor: "white",
-                  borderColor: 'rgba(170, 75, 110, 0.75)',
                   borderWidth: "5px",
                   }}>
                     <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0U4cG8B6jPetIXO0a3fVjyLKMVU4nZCtmkfNizouttjEw9KaRJCRj_1se_Jrek8ptoMY7tnkdo?gv=true" style={{border: "0"}} width="100%" height="600" frameborder="0"></iframe>
@@ -571,8 +573,8 @@ const Home = () => {
                   boxShadow: 'md',
                   textAlign: 'center',
                   backgroundColor: "rgba(0, 0, 128, 0.8)",
-                  border: 'double',
-                  borderColor: 'rgba(170, 75, 110, 0.75)',
+                  borderRadius: '20px',
+                  borderColor: 'transparent',
                   borderWidth: "5px"
                 }}
                 variant="outlined"

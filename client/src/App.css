@@ -15,13 +15,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
-.App {
-    border: solid;
-    border-left-width: 100px;
-    border-right-width: 100px;
-    border-color: transparent;
-    background-color:transparent;
-}
+
 
 @media screen and (min-device-width: 320px)
     and (max-device-width: 480px) {
@@ -32,11 +26,7 @@ body {
         background-attachment: fixed;
         
     }
-    .App {
-        border-left-width: 10px;
-        border-right-width: 10px;
-        
-    } 
+    
 }
 
 
@@ -48,11 +38,7 @@ body {
          background-size: cover;
         background-attachment: fixed;
     }
-    .App {
-        border-left-width: 20px;
-        border-right-width: 20px;
-       
-    } 
+    
 }
 
 @media screen and (min-device-width: 840px)
@@ -63,11 +49,7 @@ body {
          background-size: cover;
         background-attachment: fixed;
     }
-    .App {
-        border-left-width: 20px;
-        border-right-width: 20px;
-       
-    } 
+    
 }
 
 @media screen and (min-device-width: 1024px)
@@ -78,11 +60,7 @@ body {
          background-size: cover;
         background-attachment: fixed;
     }
-    .App {
-        border-left-width: 30px;
-        border-right-width: 30px;
-        background-color:"rgba(0, 0, 128, 0.8";
-    } 
+    
 }
 
 @media screen and (min-device-width: 1200px)
@@ -94,10 +72,6 @@ body {
         background-attachment: fixed;
         
     }
-    .App {
-        border-left-width: 50px;
-        border-right-width: 50px;
-        
-    } 
+    
 }
 

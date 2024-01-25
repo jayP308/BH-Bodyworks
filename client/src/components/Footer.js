@@ -27,7 +27,7 @@ const Footer = () => {
           
             <div style={{ display: 'flex', margin: 'auto', textAlign: 'center', width: '50%'}}>
                 <a href='https://www.instagram.com/strawburberry_shortcake___/' >
-                  <img src={sampleContact} alt="pink intagram logo" style={{ width: '100%', marginTop: '10px', border: 'double', borderColor: 'rgba(170, 75, 110, 0.75)', borderWidth: "5px"}}/>
+                  <img src={sampleContact} alt="pink intagram logo" style={{ width: '100%', marginTop: '10px', borderRadius: '20px', borderColor: 'transparent', borderWidth: "5px"}}/>
                 </a>
             </div>
             <Typography style={{padding: "12px", color: "rgb(144, 238, 144)"}}>Made by Junnel R. Padilla ©</Typography>
