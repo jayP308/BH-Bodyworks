@@ -18,6 +18,7 @@ import logoOne from "../assets/images/updated-logo4.png";
 import { CssVarsProvider } from "@mui/joy";
 import { useMediaQuery } from 'usehooks-ts'
 import Services from "../pages/Services.js"
+import sampleContact from "../assets/images/sample-contact-2.png"
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -101,8 +102,8 @@ const Home = () => {
             }}
             >
 
-<Box sx={{ 
-                  width: "80%",
+              <Box sx={{ 
+                  width: "100%",
                   flexGrow: 1, 
                   margin: 'auto',
                   marginTop: "40px",
@@ -147,7 +148,7 @@ const Home = () => {
                               <Box
                               style={{
                                   margin: 'auto',
-                                  height: 465,
+                                  height: 550,
                                   display: 'block',
                                   maxWidth: 800,
                                   overflow: 'hidden',
@@ -162,7 +163,7 @@ const Home = () => {
                                 style={{
                                   display: "block",
                                   padding: "20px",
-                                  fontSize: '50px',
+                                  fontSize: '35px',
                                   fontStyle: 'normal',
                                   marginBottom: "75px"
                                 }}
@@ -221,7 +222,7 @@ const Home = () => {
             <main>
               <Sheet
                   sx={{
-                    width: "93%",
+                    width: "100%",
                     mx: 'auto', // margin left & right
                     my: 4, // margin top & bottom
                     py: 3, // padding top & bottom
@@ -264,7 +265,7 @@ const Home = () => {
             <hr id="social-media" style={{width: '65%', border: 'double', color: 'green', margin: "auto"}}/>
             <Sheet
                 sx={{
-                  width: 800,
+                  width: "100%",
                   mx: 'auto', // margin left & right
                   my: 2, // margin top & bottom
                   py: 3, // padding top & bottom
@@ -281,8 +282,15 @@ const Home = () => {
                   borderWidth: "5px"
                 }}
                 variant="outlined"
-              > <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier"}}>Contact Information</h1>
+              > 
+              <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier"}}>Contact Information</h1>
+              
               </Sheet>
+              <div style={{ display: 'flex', margin: 'auto', textAlign: 'center', width: '100%'}}>
+                <a href='https://www.instagram.com/strawburberry_shortcake___/' >
+                  <img src={sampleContact} alt="pink intagram logo" style={{ width: '100%', height: '500px', marginTop: '10px', borderRadius: '20px', borderColor: 'transparent', borderWidth: "5px"}}/>
+                </a>
+            </div>
             <Footer/>
             </>
       ) : (
@@ -522,6 +530,7 @@ const Home = () => {
                 }}
                 variant="outlined"
               > <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier"}}>Contact Information</h1>
+              
               </Sheet>
             <Footer/>
             </>
