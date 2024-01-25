@@ -85,46 +85,6 @@ const Home = () => {
                 >
                   
                 </Sheet>
-
-                <Sheet
-                    sx={{
-                    width: "100%",
-                    mx: 'auto', // margin left & right
-                    my: 5, // margin top & bottom
-                    py: 3, // padding top & bottom
-                    px: 3, // padding left & right
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: 3,
-                    borderRadius: 'sm',
-                    background: "#c0c0c0", // Add this line
-                    textAlign:'center',
-                    backgroundColor: 'rgba(182, 182, 158, 0.671)',
-                    border: 'double',
-                    borderColor: 'rgba(10, 92, 51, 0.699)',
-                    borderWidth: "5px", 
-                    color: "black",
-                }}
-                >
-                    <Typography style={{ fontWeight: "10px", fontSize: "35px", }}>Nghi Vo</Typography>
-                    <Typography style={{ fontWeight: "10px", fontSize: "20px", }}>(Massage Therapist Student)</Typography>
-                    
-                    <Typography style={{ fontSize: '15px', fontFamily: 'monospace', padding:'5px', fontStyle: 'oblique'}}>
-                    My journey into massage therapy has been both fascinating and fulfilling. 
-                    
-                    </Typography>
-                    <Typography style={{ fontSize: '15px', fontFamily: 'monospace', padding:'5px', fontStyle: 'oblique'}}>
-                    As a student in this field, I'm passionate about using the power of touch to help people find relief from physical discomfort and stress. 
-                    </Typography>
-                    <Typography style={{ fontSize: '15px', fontFamily: 'monospace', padding:'5px', fontStyle: 'oblique'}}>
-                    Learning the art of massage has given me a deep appreciation for the body's ability to heal itself and the importance of maintaining a mind-body connection. 
-                   
-                    </Typography>
-                    <Typography style={{ fontSize: '15px', fontFamily: 'monospace', padding:'5px', fontStyle: 'oblique'}}>
-                    I look forward to using my skills to make a positive impact on the lives of others, one soothing massage at a time.
-                    </Typography>
-                    <img src={dividerImg} alt='golden line with diamond shape in the middle' style={{width: '100%', height: 'auto'}} />
-                </Sheet>
             </div>
             
             <hr id="type-of-massages" style={{width: '65%', border: 'double', color: 'green', margin: "auto"}}/>
@@ -141,16 +101,17 @@ const Home = () => {
             }}
             >
 
-              <Box sx={{ 
-                  width: "100%", 
+<Box sx={{ 
+                  width: "80%",
                   flexGrow: 1, 
                   margin: 'auto',
                   marginTop: "40px",
                   marginBottom: "40px",
-                  border: 'double',
-                  backgroundColor: 'rgba(182, 182, 158, 0.671)',
-                  borderColor: 'rgba(10, 92, 51, 0.699)',
+                  backgroundColor: "rgba(0, 0, 128, 0.8)",
+                  borderRadius: '20px',
+                  borderColor: 'rgba(170, 75, 110, 0.75)',
                   borderWidth: "5px",
+                  color: "rgb(144, 238, 144)"
                   }}>
                     
                   <Paper
@@ -161,19 +122,21 @@ const Home = () => {
                       alignItems: 'center',
                       height: 50,
                       margin: 'auto',
-                      background: "linear-gradient(to bottom, green, rgba(190, 190, 161, 0.616), rgba(182, 182, 158, 0.671))",
+                      borderRadius: '20px',
+                      backgroundColor: "transparent",
+                      borderColor: 'rgba(170, 75, 110, 0.75)',
+                      borderWidth: "5px",
                       justifyContent: 'center',
                       padding: '10px'
                       }}
                   >
-                    <h1 style={{ fontWeight: "10px", fontSize: "30px", padding: '25px', WebkitTextFillColor: 'black', }}>Type of Massages</h1>
                     <Typography style={{fontFamily: 'monospace', fontSize: '15px',}}>{images.label}</Typography>
                   </Paper>
                   
                       <AutoPlaySwipeableViews
                       axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                       index={activeStep}
-                      interval={10000}
+                      interval={15000}
                       onChangeIndex={handleStepChange}
                       enableMouseEvents
                       >
@@ -191,50 +154,24 @@ const Home = () => {
                                   width: '100%',
                                   textAlign: "center",
                                   fontFamily: 'monospace',
-                                  fontSize: '13px',
+                                  fontSize: '20px',
                                   padding: '5px',
+                                  fontStyle: "italic"
                               }}
                               ><span
                                 style={{
                                   display: "block",
                                   padding: "20px",
-                                  fontSize: '20px',
-                                  fontStyle: 'bold',
+                                  fontSize: '50px',
+                                  fontStyle: 'normal',
+                                  marginBottom: "75px"
                                 }}
                               >{step.label}</span>
-                               <img src={dividerImg} alt='golden line with diamond shape in the middle' style={{width: '100%', height: 'auto', padding: '5px'}} />
+                               
                                 {step.descriptions}
                               
                               </Box>
                           ) : null}
-                          </div>
-                      ))}
-                      </AutoPlaySwipeableViews>
-
-                      <AutoPlaySwipeableViews
-                      axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-                      index={activeStep}
-                      interval={10000}
-                      onChangeIndex={handleStepChange}
-                      enableMouseEvents
-                      >
-                      {images.map((step, index) => (
-                          <div key={step.label}>
-                          {Math.abs(activeStep - index) <= 2 ? (
-                              <Box
-                              component="img"
-                              sx={{
-                                  height: 300,
-                                  display: 'block',
-                                  maxWidth: 800,
-                                  overflow: 'hidden',
-                                  width: '100%',
-                              }}
-                              src={step.imgPath}
-                              alt={step.label}
-                              />
-                          ) : null}
-                         
                           </div>
                       ))}
                       </AutoPlaySwipeableViews>
@@ -244,7 +181,10 @@ const Home = () => {
                       position="static"
                       activeStep={activeStep}
                       style={{
-                        background: "linear-gradient(to top, green, rgba(190, 190, 161, 0.616), rgba(182, 182, 158, 0.671))",
+                        borderRadius: '20px',
+                      backgroundColor: "transparent",
+                      borderColor: 'rgba(170, 75, 110, 0.75)',
+                      borderWidth: "5px",
                       }}
                       
                       nextButton={
@@ -252,6 +192,7 @@ const Home = () => {
                           size="small"
                           onClick={handleNext}
                           disabled={activeStep === maxSteps - 1}
+                          style={{color: "rgb(144, 238, 144)"}}
                       >
                           Next
                           {theme.direction === 'rtl' ? (
@@ -262,7 +203,7 @@ const Home = () => {
                       </Button>
                       }
                       backButton={
-                      <Button size="small" onClick={handleBack} disabled={activeStep === 0} >
+                      <Button size="small" onClick={handleBack} disabled={activeStep === 0} style={{color: "rgb(144, 238, 144)"}}>
                           {theme.direction === 'rtl' ? (
                           <KeyboardArrowRight />
                           ) : (
@@ -279,67 +220,69 @@ const Home = () => {
             <CssVarsProvider>
             <main>
               <Sheet
-                style={{
-                  width: "100%",
-                  margin: 'auto', // margin left & right
-                  marginTop: "40px",
-                  marginBottom: "40px",
+                  sx={{
+                    width: "93%",
+                    mx: 'auto', // margin left & right
+                    my: 4, // margin top & bottom
+                    py: 3, // padding top & bottom
+                    px: 2, // padding left & right
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: 2,
+                    borderRadius: 'sm',
+                    boxShadow: 'md',
+                    textAlign: 'center',
+                    backgroundColor: "rgba(0, 0, 128, 0.8)",
+                    borderRadius: '20px',
+                    borderColor: 'transparent',
+                    borderWidth: "5px"
+                  }}
+                  variant="outlined"
+                >
+                  <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier"}}>Services & Appointments</h1>
+                  <hr style={{width: '65%', border: 'double', color: 'rgba(170, 75, 110, 0.75)', margin: "auto", marginBottom: '15px'}}/>
+                  <Services/>
+                  <Box sx={{ 
+                    width: "100%",
+                    flexGrow: 1, 
+                    margin: 'auto',
+                    marginTop: "50px",
+                    marginBottom: "50px",
+                    marginRight: '50px',
+                    borderRadius: '20px',
+                    backgroundColor: "white",
+                    borderWidth: "5px",
+                    }}>
+                      <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0U4cG8B6jPetIXO0a3fVjyLKMVU4nZCtmkfNizouttjEw9KaRJCRj_1se_Jrek8ptoMY7tnkdo?gv=true" style={{border: "0"}} width="100%" height="600" frameborder="0"></iframe>
+                  </Box>
+                  
+                  
+                  
+                </Sheet>
+            </main>
+            </CssVarsProvider>
+            <hr id="social-media" style={{width: '65%', border: 'double', color: 'green', margin: "auto"}}/>
+            <Sheet
+                sx={{
+                  width: 800,
+                  mx: 'auto', // margin left & right
+                  my: 2, // margin top & bottom
+                  py: 3, // padding top & bottom
+                  px: 2, // padding left & right
+                  display: 'flex',
                   flexDirection: 'column',
                   gap: 2,
                   borderRadius: 'sm',
                   boxShadow: 'md',
                   textAlign: 'center',
-                  backgroundColor: 'rgba(182, 182, 158, 0.671)',
-                  border: 'double',
-                  borderColor: 'rgba(10, 92, 51, 0.699)',
+                  backgroundColor: "rgba(0, 0, 128, 0.8)",
+                  borderRadius: '20px',
+                  borderColor: 'transparent',
                   borderWidth: "5px"
                 }}
                 variant="outlined"
-              >
-                <h1 style={{ fontWeight: "10px", fontSize: "35px", padding: '15px', WebkitTextFillColor: 'black', }}>Services</h1>
-                <hr style={{width: '65%', border: 'double', color: 'green', margin: "auto", marginBottom: '15px'}}/>
-                <div>
-                  <img src={logoOne} alt="website logo of lotus" style={{ width: '50%', margin: "auto",}} />
-                </div>
-                <hr style={{width: '65%', border: 'double', color: 'green', margin: "auto", marginTop: '15px', marginBottom: '15px'}}/>
-                <Typography sx={{ fontWeight: "10px", fontSize: "30px", WebkitTextFillColor: 'black', color: 'black' }}>
-                    <b>Modalities</b>
-                </Typography>
-                <Typography sx={{ fontSize: "20px", color: 'black' }}>
-                    <b>Includes: </b>
-                </Typography>
-                <Typography sx={{ fontSize: "10px", color: 'black', fontStyle: 'italic' }}>
-                    <b>( Sports Massage, Shiatsu Massage, and Reflexology )</b>
-                </Typography>
-                <Typography sx={{ fontWeight: "10px", fontSize: "30px", WebkitTextFillColor: 'black', }}>
-                    <b>Chair Massage</b>
-                </Typography>
-                <Typography sx={{ fontWeight: "10px", fontSize: "30px", WebkitTextFillColor: 'black', }}>
-                    <b>Foot Massage</b>
-                </Typography>
-                <Typography sx={{ fontWeight: "10px", fontSize: "30px", WebkitTextFillColor: 'black', }}>
-                    <b>Add-ons</b>
-                </Typography>
-                <div style={{ display: "block", margin: "auto"}}>
-                <Typography sx={{ fontSize: "18px", color: 'black' }}>
-                      <b> Swedish Massage</b>
-                  </Typography>
-                  <Typography sx={{ fontSize: "18px", color: 'black' }}>
-                      <b> Deep Tissue Massage</b>
-                  </Typography>
-                  <Typography sx={{ fontSize: "18px", color: 'black' }}>
-                      <b> Reflexology</b>
-                  </Typography>
-                  <Typography sx={{ fontSize: "18px", color: 'black' }}>
-                      <b> Scalp Massage</b>
-                  </Typography>
-                </div>
-                <img src={dividerImg} alt='golden line with diamond shape in the middle' style={{width: '100%', height: 'auto', padding: '15px'}} />
-                
+              > <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier"}}>Contact Information</h1>
               </Sheet>
-            </main>
-            </CssVarsProvider>
-            <hr id="social-media" style={{width: '65%', border: 'double', color: 'green', margin: "auto"}}/>
             <Footer/>
             </>
       ) : (
@@ -578,7 +521,8 @@ const Home = () => {
                   borderWidth: "5px"
                 }}
                 variant="outlined"
-              > <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier"}}>Contact Information</h1></Sheet>
+              > <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier"}}>Contact Information</h1>
+              </Sheet>
             <Footer/>
             </>
             )};
