@@ -4,7 +4,7 @@ import { Button } from "@material-ui/core";
 import Typography from '@mui/joy/Typography';
 import Sheet from '@mui/joy/Sheet';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import logoImage from "../assets/images/video_full.gif"
+import logoImage from "../assets/images/massage-image.jpg"
 import { Link } from 'react-router-dom';
 
 
@@ -72,7 +72,7 @@ const Header = () => {
         component="img"
         alt=""
         img src={logoImage}
-        sx={{ position: 'absolute', height: '75%', top: 1, right: 1, margin: "auto", marginRight: "100px", marginTop: "50px" }}
+        sx={{ position: 'absolute',width:'30%', height: '100%', top: 1, right: 1, margin: "auto",}}
       />
     </Sheet>
   );

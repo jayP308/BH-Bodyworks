@@ -371,30 +371,26 @@ const Home = () => {
                   display: 'flex',
                   flexDirection: 'column',
                   gap: 2,
-                  borderRadius: 'sm',
+                  borderRadius: '20px',
                   boxShadow: 'md',
                   textAlign: 'center',
                   backgroundColor: "rgba(0, 0, 128, 0.8)",
-                  border: 'double',
-                  borderColor: 'rgba(170, 75, 110, 0.75)',
-                  borderWidth: "5px"
+                  borderColor: 'transparent',
                 }}
                 variant="outlined"
               > <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier" }}>Reviews</h1></Sheet>
             <div
-             style={{
-              display: 'flex',
-              width: "95%",
-              margin: 'auto',
-              mx: 'auto', // margin left & right
-              my: 4, // margin top & bottom
-              py: 3, // padding top & bottom
-              px: 2, // padding left & right
-              flexDirection: 'row',
-              background: 'transparent',
-             
-
-            }}
+             sx={{
+        flexGrow: 1,
+        display: 'flex',
+        p: { xs: '36px', md: '70px' },
+        pt: { xs: '24px', md: '60px' },
+        borderRadius: 'lg',
+        overflow: 'hidden',
+        '& button': { borderRadius: 'xl' },
+        height: "500px",
+        backgroundColor: "rgba(0, 0, 128, 0.8)"
+      }}
             >
               <Typography style={{fontFamily: 'monospace', fontSize: '20px'}}></Typography>
               <Box sx={{ 
@@ -404,7 +400,7 @@ const Home = () => {
                   marginTop: "40px",
                   marginBottom: "40px",
                   backgroundColor: "rgba(0, 0, 128, 0.8)",
-                  border: 'double',
+                  borderRadius: '20px',
                   borderColor: 'rgba(170, 75, 110, 0.75)',
                   borderWidth: "5px",
                   color: "rgb(144, 238, 144)"
@@ -418,7 +414,10 @@ const Home = () => {
                       alignItems: 'center',
                       height: 50,
                       margin: 'auto',
-                      background: "linear-gradient(to bottom, rgba(170, 75, 110, 0.75), rgba(190, 190, 161, 0.616), rgba(0, 0, 128, 0.5))",
+                      borderRadius: '20px',
+                      backgroundColor: "transparent",
+                      borderColor: 'rgba(170, 75, 110, 0.75)',
+                      borderWidth: "5px",
                       justifyContent: 'center',
                       padding: '10px'
                       }}
@@ -474,7 +473,10 @@ const Home = () => {
                       position="static"
                       activeStep={activeStep}
                       style={{
-                        background: "linear-gradient(to top, rgba(170, 75, 110, 0.75), rgba(190, 190, 161, 0.616), rgba(0, 0, 128, 0.5))",
+                        borderRadius: '20px',
+                      backgroundColor: "transparent",
+                      borderColor: 'rgba(170, 75, 110, 0.75)',
+                      borderWidth: "5px",
                       }}
                       
                       nextButton={

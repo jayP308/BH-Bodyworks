@@ -30,6 +30,7 @@ body {
         background-repeat: none;
          background-size: cover;
         background-attachment: fixed;
+        
     }
     .App {
         border-left-width: 10px;
@@ -80,7 +81,7 @@ body {
     .App {
         border-left-width: 30px;
         border-right-width: 30px;
-
+        background-color:"rgba(0, 0, 128, 0.8";
     } 
 }
 
@@ -91,6 +92,7 @@ body {
         background-repeat: none;
          background-size: cover;
         background-attachment: fixed;
+        
     }
     .App {
         border-left-width: 50px;
