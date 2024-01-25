@@ -25,27 +25,27 @@ const images = [
   {
     label: 'Mathias Sather',
     
-    descriptions: "`Bethany was the best!`",
+    descriptions: '"Bethany was the best!"',
   },
   {
     label: 'Pedro Tanure',
     
-    descriptions: "`This place is excellent. I had a 25-minute session with Bethany and really enjoyed it. Highly recommend it!`"
+    descriptions: '"This place is excellent. I had a 25-minute session with Bethany and really enjoyed it. Highly recommend it!"'
     },
   {
     label: 'Karl Boardman',
     
-    descriptions: "`Bethany is great. Going weekly has helped my lower back pain majorly`"
+    descriptions: '"Bethany is great. Going weekly has helped my lower back pain majorly"'
   },
   {
     label: 'Dave M.',
    
-    descriptions: "`When it comes to health and wellness, I believe StretchLab Embarcadero is absolutely essential. Bethany is amazing! Her knowledge of kinesiology is top notch. I really appreciate her guidance through the stretches. And after the session, I felt a significant improvement in mobility and well-being. Also want to acknowledge Mike. the awesome general manager. Big thanks to him for his help with everything!`",
+    descriptions: '"When it comes to health and wellness, I believe StretchLab Embarcadero is absolutely essential. Bethany is amazing! Her knowledge of kinesiology is top notch. I really appreciate her guidance through the stretches. And after the session, I felt a significant improvement in mobility and well-being. Also want to acknowledge Mike. the awesome general manager. Big thanks to him for his help with everything!"',
   },
   {
     label: 'Brandon Reich',
     
-    descriptions: "`Bethany is the best - I came in incredibly inflexible and generally not well versed in stretching. I feel like a new person!`",
+    descriptions: '"Bethany is the best - I came in incredibly inflexible and generally not well versed in stretching. I feel like a new person!"',
   },
 ];
 
