@@ -34,16 +34,19 @@ const Header = () => {
         
       <Box sx={{ zIndex: 1, position: 'relative',}}>
         <Typography level="h2">Bethany Hernandez</Typography>
+        <Typography sx={{ mt: 0.5, mb: 2, width: "50%", fontStyle:'oblique'}}>
+            (Certified Massage Therapist)
+        </Typography>
         <br/>
-        <Typography sx={{ mt: 0.5, mb: 2, width: "50%",}}>
+        <Typography sx={{ mb: 1, width: "50%",}}>
             Get out of your head and into your body
         </Typography>
         <br/>
-        <Typography sx={{ mt: 0.5, mb: 2, width: "50%",}}>
+        <Typography sx={{ mb: 2, width: "50%",}}>
             I help you become aware of your body and leverage the mind body connection to live a happier healthy lifestyle.
         </Typography>
         <br/>
-        <Typography sx={{ mt: 0.5, mb: 2, width: "50%",}}>
+        <Typography sx={{  mb: 2, width: "50%",}}>
             Your body is your main tool to navigate your life and your environment. Let me help you learn how to use it optimally.
         </Typography>
         <br/>
