@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/blissful-essence-therapeutic-healing/static/css/main.6c71f773.css",
+    "main.js": "/blissful-essence-therapeutic-healing/static/js/main.3df7d099.js",
+    "static/media/neuromuscular-therapy.gif": "/blissful-essence-therapeutic-healing/static/media/neuromuscular-therapy.508afc602b19fd153439.gif",
+    "static/media/Deep Tissue .gif": "/blissful-essence-therapeutic-healing/static/media/Deep Tissue .3f486e606d311bca4e83.gif",
+    "static/media/mobility-training.gif": "/blissful-essence-therapeutic-healing/static/media/mobility-training.25ecd640ef030e7c02c2.gif",
+    "static/media/cupping.gif": "/blissful-essence-therapeutic-healing/static/media/cupping.50595853f468fd4e2ec7.gif",
+    "static/media/1-on-1 Stretching.gif": "/blissful-essence-therapeutic-healing/static/media/1-on-1 Stretching.55f6406fd7f52b8ad716.gif",
+    "static/media/sample-contact-2.png": "/blissful-essence-therapeutic-healing/static/media/sample-contact-2.2347ef819d063ab3460d.png",
+    "static/media/updated-logo4.png": "/blissful-essence-therapeutic-healing/static/media/updated-logo4.f6aa54117a9d94804984.png",
+    "static/media/video_full.gif": "/blissful-essence-therapeutic-healing/static/media/video_full.c57776d3f5baadc1c904.gif",
+    "static/media/instagram-logo.png": "/blissful-essence-therapeutic-healing/static/media/instagram-logo.0963b7a591227164566c.png",
+    "static/media/massage-image.jpg": "/blissful-essence-therapeutic-healing/static/media/massage-image.f5767880b16f53b8eb4b.jpg",
+    "static/media/FullLogo.png": "/blissful-essence-therapeutic-healing/static/media/FullLogo.1fb13ac545f174467fe1.png",
+    "static/media/divider.png": "/blissful-essence-therapeutic-healing/static/media/divider.0ce03c03ea69ab55e3be.png",
+    "index.html": "/blissful-essence-therapeutic-healing/index.html",
+    "main.6c71f773.css.map": "/blissful-essence-therapeutic-healing/static/css/main.6c71f773.css.map",
+    "main.3df7d099.js.map": "/blissful-essence-therapeutic-healing/static/js/main.3df7d099.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c71f773.css",
+    "static/js/main.3df7d099.js"
+  ]
+}
