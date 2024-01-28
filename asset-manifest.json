@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/blissful-essence-therapeutic-healing/static/css/main.6c71f773.css",
-    "main.js": "/blissful-essence-therapeutic-healing/static/js/main.3df7d099.js",
+    "main.js": "/blissful-essence-therapeutic-healing/static/js/main.f7a90284.js",
     "static/media/neuromuscular-therapy.gif": "/blissful-essence-therapeutic-healing/static/media/neuromuscular-therapy.508afc602b19fd153439.gif",
     "static/media/Deep Tissue .gif": "/blissful-essence-therapeutic-healing/static/media/Deep Tissue .3f486e606d311bca4e83.gif",
     "static/media/mobility-training.gif": "/blissful-essence-therapeutic-healing/static/media/mobility-training.25ecd640ef030e7c02c2.gif",
@@ -16,10 +16,10 @@
     "static/media/divider.png": "/blissful-essence-therapeutic-healing/static/media/divider.0ce03c03ea69ab55e3be.png",
     "index.html": "/blissful-essence-therapeutic-healing/index.html",
     "main.6c71f773.css.map": "/blissful-essence-therapeutic-healing/static/css/main.6c71f773.css.map",
-    "main.3df7d099.js.map": "/blissful-essence-therapeutic-healing/static/js/main.3df7d099.js.map"
+    "main.f7a90284.js.map": "/blissful-essence-therapeutic-healing/static/js/main.f7a90284.js.map"
   },
   "entrypoints": [
     "static/css/main.6c71f773.css",
-    "static/js/main.3df7d099.js"
+    "static/js/main.f7a90284.js"
   ]
 }
