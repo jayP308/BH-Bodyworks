@@ -26,7 +26,7 @@ const Footer = () => {
         <BottomNavigation style={{display: 'block', background: 'transparent', height: '150px', margin: 'auto', textAlign: 'center', padding: '15px'}}>
           
             <div style={{ display: 'flex', margin: 'auto', textAlign: 'center', width: '50%'}}>
-                <a href='https://www.instagram.com/strawburberry_shortcake___/' >
+                <a href='https://www.instagram.com/bfitbstrong_/' >
                   <img src={sampleContact} alt="pink intagram logo" style={{ width: '100%', marginTop: '10px', borderRadius: '20px', borderColor: 'transparent', borderWidth: "5px"}}/>
                 </a>
             </div>
