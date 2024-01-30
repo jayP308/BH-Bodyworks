@@ -18,7 +18,7 @@ import logoOne from "../assets/images/updated-logo4.png";
 import { CssVarsProvider } from "@mui/joy";
 import { useMediaQuery } from 'usehooks-ts'
 import Services from "../pages/Services.js"
-import sampleContact from "../assets/images/sample-contact-2.png"
+import sampleContact from "../assets/images/Instagram-post.png"
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -287,10 +287,11 @@ const Home = () => {
               
               </Sheet>
               <div style={{ display: 'flex', margin: 'auto', textAlign: 'center', width: '100%'}}>
-                <a href='https://www.instagram.com/strawburberry_shortcake___/' >
+                <a href='https://www.instagram.com/bfitbstrong_/' >
                   <img src={sampleContact} alt="pink intagram logo" style={{ width: '100%', height: '500px', marginTop: '10px', borderRadius: '20px', borderColor: 'transparent', borderWidth: "5px"}}/>
                 </a>
             </div>
+            <Typography style={{padding: "12px", color: "rgb(144, 238, 144)", textAlign: "center"}}>Made by Junnel R. Padilla ©</Typography>
             <Footer/>
             </>
       ) : (
