@@ -1,7 +1,7 @@
 {
   "name": "bh-bodyworks",
   "version": "0.1.0",
-  "homepage": "https://jayP308.github.io/bh-bodyworks/",
+  "homepage": "https://jayP308.github.io/BH-Bodyworks/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
