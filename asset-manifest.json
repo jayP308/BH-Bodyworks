@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/BH-Bodyworks/static/css/main.b0d799f3.css",
-    "main.js": "/BH-Bodyworks/static/js/main.e8cc5ccf.js",
-    "static/media/Instagram-post.png": "/BH-Bodyworks/static/media/Instagram-post.04126643706bfbbda513.png",
-    "static/media/updated-logo4.png": "/BH-Bodyworks/static/media/updated-logo4.f6aa54117a9d94804984.png",
-    "static/media/video_full.gif": "/BH-Bodyworks/static/media/video_full.c57776d3f5baadc1c904.gif",
-    "static/media/oneonone.png": "/BH-Bodyworks/static/media/oneonone.e40d1ec822aeca4b21e2.png",
-    "static/media/Neuromuscular.png": "/BH-Bodyworks/static/media/Neuromuscular.6d26c4b0837fe222d503.png",
-    "static/media/Deep-tissue.png": "/BH-Bodyworks/static/media/Deep-tissue.00f381f7fedbd86853c2.png",
-    "static/media/mobility-training.png": "/BH-Bodyworks/static/media/mobility-training.e4ec68fe8519f3ed227c.png",
-    "static/media/Cupping.png": "/BH-Bodyworks/static/media/Cupping.610059b1a1189566f5c8.png",
-    "static/media/instagram-logo.png": "/BH-Bodyworks/static/media/instagram-logo.0963b7a591227164566c.png",
-    "static/media/massage-image.jpg": "/BH-Bodyworks/static/media/massage-image.f5767880b16f53b8eb4b.jpg",
-    "static/media/FullLogo.png": "/BH-Bodyworks/static/media/FullLogo.1fb13ac545f174467fe1.png",
-    "static/media/divider.png": "/BH-Bodyworks/static/media/divider.0ce03c03ea69ab55e3be.png",
-    "index.html": "/BH-Bodyworks/index.html",
-    "main.b0d799f3.css.map": "/BH-Bodyworks/static/css/main.b0d799f3.css.map",
-    "main.e8cc5ccf.js.map": "/BH-Bodyworks/static/js/main.e8cc5ccf.js.map"
+    "main.css": "/bh-bodyworks/static/css/main.510d4670.css",
+    "main.js": "/bh-bodyworks/static/js/main.1bfd3043.js",
+    "static/media/Instagram-post.png": "/bh-bodyworks/static/media/Instagram-post.04126643706bfbbda513.png",
+    "static/media/updated-logo4.png": "/bh-bodyworks/static/media/updated-logo4.f6aa54117a9d94804984.png",
+    "static/media/video_full.gif": "/bh-bodyworks/static/media/video_full.c57776d3f5baadc1c904.gif",
+    "static/media/oneonone.png": "/bh-bodyworks/static/media/oneonone.e40d1ec822aeca4b21e2.png",
+    "static/media/Neuromuscular.png": "/bh-bodyworks/static/media/Neuromuscular.6d26c4b0837fe222d503.png",
+    "static/media/Deep-tissue.png": "/bh-bodyworks/static/media/Deep-tissue.00f381f7fedbd86853c2.png",
+    "static/media/mobility-training.png": "/bh-bodyworks/static/media/mobility-training.e4ec68fe8519f3ed227c.png",
+    "static/media/Cupping.png": "/bh-bodyworks/static/media/Cupping.610059b1a1189566f5c8.png",
+    "static/media/instagram-logo.png": "/bh-bodyworks/static/media/instagram-logo.0963b7a591227164566c.png",
+    "static/media/massage-image.jpg": "/bh-bodyworks/static/media/massage-image.f5767880b16f53b8eb4b.jpg",
+    "static/media/FullLogo.png": "/bh-bodyworks/static/media/FullLogo.1fb13ac545f174467fe1.png",
+    "static/media/divider.png": "/bh-bodyworks/static/media/divider.0ce03c03ea69ab55e3be.png",
+    "index.html": "/bh-bodyworks/index.html",
+    "main.510d4670.css.map": "/bh-bodyworks/static/css/main.510d4670.css.map",
+    "main.1bfd3043.js.map": "/bh-bodyworks/static/js/main.1bfd3043.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0d799f3.css",
-    "static/js/main.e8cc5ccf.js"
+    "static/css/main.510d4670.css",
+    "static/js/main.1bfd3043.js"
   ]
 }
