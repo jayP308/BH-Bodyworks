@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bh-bodyworks/static/css/main.510d4670.css",
-    "main.js": "/bh-bodyworks/static/js/main.1bfd3043.js",
+    "main.js": "/bh-bodyworks/static/js/main.cd3b2d0c.js",
     "static/media/Instagram-post.png": "/bh-bodyworks/static/media/Instagram-post.04126643706bfbbda513.png",
     "static/media/updated-logo4.png": "/bh-bodyworks/static/media/updated-logo4.f6aa54117a9d94804984.png",
     "static/media/video_full.gif": "/bh-bodyworks/static/media/video_full.c57776d3f5baadc1c904.gif",
@@ -16,10 +16,10 @@
     "static/media/divider.png": "/bh-bodyworks/static/media/divider.0ce03c03ea69ab55e3be.png",
     "index.html": "/bh-bodyworks/index.html",
     "main.510d4670.css.map": "/bh-bodyworks/static/css/main.510d4670.css.map",
-    "main.1bfd3043.js.map": "/bh-bodyworks/static/js/main.1bfd3043.js.map"
+    "main.cd3b2d0c.js.map": "/bh-bodyworks/static/js/main.cd3b2d0c.js.map"
   },
   "entrypoints": [
     "static/css/main.510d4670.css",
-    "static/js/main.1bfd3043.js"
+    "static/js/main.cd3b2d0c.js"
   ]
 }
