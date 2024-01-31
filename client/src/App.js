@@ -14,7 +14,7 @@ function App() {
         <>
           <Routes>
 
-            <Route path="/blissful-essence-therapeutic-healing" element={<Home/>} />
+            <Route path="/bh-bodyworks" element={<Home/>} />
 
             <Route path="/appointment" component={<Appointment/>} />
 
