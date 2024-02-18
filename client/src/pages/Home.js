@@ -242,23 +242,7 @@ const Home = () => {
                 >
                   <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier"}}>Services & Appointments</h1>
                   <hr style={{width: '65%', border: 'double', color: 'rgba(170, 75, 110, 0.75)', margin: "auto", marginBottom: '15px'}}/>
-                  <Services/>
-                  <Box sx={{ 
-                    width: "100%",
-                    flexGrow: 1, 
-                    margin: 'auto',
-                    marginTop: "50px",
-                    marginBottom: "50px",
-                    marginRight: '50px',
-                    borderRadius: '20px',
-                    backgroundColor: "white",
-                    borderWidth: "5px",
-                    }}>
-                      <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0U4cG8B6jPetIXO0a3fVjyLKMVU4nZCtmkfNizouttjEw9KaRJCRj_1se_Jrek8ptoMY7tnkdo?gv=true" style={{border: "0"}} width="100%" height="600" frameborder="0"></iframe>
-                  </Box>
-                  
-                  
-                  
+                  <Services/>  
                 </Sheet>
             </main>
             </CssVarsProvider>

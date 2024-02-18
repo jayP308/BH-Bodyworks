@@ -31,9 +31,9 @@ export default function BasicCard() {
 
   const handleTopOfPage = () => {
     window.history.replaceState(null, null, '/bh-bodyworks');
-    const servicesElement = document.getElementById('Home');
-    if (servicesElement) {
-      servicesElement.scrollIntoView({ behavior: 'smooth' });
+    const homeElement = document.getElementById('Home');
+    if (homeElement) {
+      homeElement.scrollIntoView({ behavior: 'smooth' });
     }
     setTypographyVisible(false);
     setTypographyVisible1(false);
@@ -131,6 +131,7 @@ export default function BasicCard() {
     <>
     {matches ? (
       <>
+      <Button onClick={handleTopOfPage} sx={{width: "50%", margin: "auto"}}>Back To Home</Button>
         <div style={{
         display: "flex",
         justifyContent: 'center',
@@ -151,7 +152,7 @@ export default function BasicCard() {
               alt=""
             />
           </AspectRatio>
-      
+          <Button href="#massage-description" onClick={handleToggleTypography}>Read More</Button>
         </Card>
 
 
@@ -167,6 +168,7 @@ export default function BasicCard() {
               alt=""
             />
           </AspectRatio>
+          <Button href="#massage-description" onClick={handleToggleTypography1}>Read More</Button>
         </Card>
 
         <Card sx={{ width: 320, backgroundColor: "rgba(170, 75, 110, 0.75)",}}>
@@ -181,7 +183,7 @@ export default function BasicCard() {
               alt=""
             />
           </AspectRatio>
-          
+          <Button href="#massage-description" onClick={handleToggleTypography2}>Read More</Button>
         </Card>
 
         <Card sx={{ width: 320, backgroundColor: "rgba(170, 75, 110, 0.75)",}}>
@@ -196,7 +198,7 @@ export default function BasicCard() {
               alt=""
             />
           </AspectRatio>
-          
+          <Button href="#massage-description" onClick={handleToggleTypography3} disabled>Read More</Button>
         </Card>
 
         <Card sx={{ width: 320, backgroundColor: "rgba(170, 75, 110, 0.75)",}}>
@@ -211,9 +213,102 @@ export default function BasicCard() {
               alt=""
             />
           </AspectRatio>
-          <Typography onClick={handleToggleTypography}>Hello</Typography>
+          <Button href="#massage-description" onClick={handleToggleTypography4} disabled>Read More</Button>
         </Card>
 
+        <Card ref={massageDescriptionRef} sx={{ width: "100%", backgroundColor: "transparent",}}>
+          {isTypographyVisible && (
+            <>
+            <AspectRatio minHeight="90px" maxHeight="475px" width="">
+            <img
+              src={oneOnOneVideo}
+              loading="lazy"
+              alt=""
+            />
+          </AspectRatio>
+          <Typography style={{fontSize: "30px", color: "white", fontStyle: "bold", color: "rgb(144, 238, 144)", fontStyle: "bold"}}>Price: $90 / 60 min</Typography>
+          <Button onClick={handleToggleSchedule} style={{width: "50%", margin: "auto"}}>Book Now</Button>
+          <br></br>
+          <div style={{width: "75%", margin: "auto"}}>
+            <Typography sx={{ fontFamily: "san-serif", color: "white", fontSize: "30px"}}>Feeling tight and don't want to stretch on your own?</Typography>
+            <br></br>
+            <Typography sx={{color: "white", fontSize: "25px"}}>Come get assisted stretching!</Typography>
+            <br></br>
+            <Typography sx={{color: "white", fontSize: "25px"}}>I stretch each muscle group head to toe, finding any imbalances and working towards better flexibility and movement goals!</Typography>
+          </div>
+          </>
+          )}
+
+          {isTypographyVisible1 && (
+            <>
+            <AspectRatio minHeight="90px" maxHeight="475px" width="">
+            <img
+              src={neuroVideo}
+              loading="lazy"
+              alt=""
+            />
+          </AspectRatio>
+          <Typography style={{fontSize: "30px", color: "white", fontStyle: "bold", color: "rgb(144, 238, 144)"}}>Price: $150 / 90 min</Typography>
+          <Button onClick={handleToggleSchedule} style={{width: "50%", margin: "auto"}}>Book Now</Button>
+          <br></br>
+          <div style={{width: "75%", margin: "auto"}}>
+            <Typography sx={{ fontFamily: "san-serif", color: "white", fontSize: "30px", fontStyle: "bold"}}>Do you have shooting pain or a dull ache somewhere in your muscles?</Typography>
+            <br></br>
+            <Typography sx={{color: "white", fontSize: "25px"}}>NMT is for you!</Typography>
+            <br></br>
+            <Typography sx={{color: "white", fontSize: "25px"}}>Provides a variety of assessments that gives a base plan to ensure we are breaking down the culprits causing your pain! Usually requires multiple sessions to see max results.</Typography>
+          </div>
+          </>
+          )}
+
+          {isTypographyVisible2 && (
+            <>
+            <AspectRatio minHeight="90px" maxHeight="475px" width="">
+            <img
+              src={deepTissue}
+              loading="lazy"
+              alt=""
+            />
+          </AspectRatio>
+          <Typography style={{fontSize: "30px", color: "white", fontStyle: "bold", color: "rgb(144, 238, 144)"}}>Prices:</Typography>
+          <Typography style={{fontSize: "30px", color: "white", fontStyle: "bold", color: "rgb(144, 238, 144)"}}>$125 / 60 min</Typography>
+          <Typography style={{fontSize: "30px", color: "white", fontStyle: "bold", color: "rgb(144, 238, 144)"}}>$150 / 90 min</Typography>
+          <Button onClick={handleToggleSchedule} style={{width: "50%", margin: "auto"}}>Book Now</Button>
+          <br></br>
+          <div style={{width: "95%", margin: "auto",}}>
+            <Typography sx={{ fontFamily: "san-serif", color: "white", fontSize: "30px", fontStyle: "bold"}}>I come to you in the comfort of own home!</Typography>
+            <br></br>
+            <Typography sx={{color: "white", fontSize: "25px"}}>I bring my own table and supplies!</Typography>
+            <br></br>
+            <Typography sx={{color: "white", fontSize: "25px"}}>Utilizing a wide variety of soft tissue techniques to ensure a relaxing and effective massage</Typography>
+          </div>
+          </>
+          )}
+        </Card>
+        {isScheduleVisible && (
+            <>
+            
+            <Card id="schedule-view">
+              <>
+                <Box sx={{ 
+                  width: "100%",
+                  flexGrow: 1, 
+                  margin: 'auto',
+                  marginTop: "50px",
+                  marginBottom: "50px",
+                  marginRight: '50px',
+                  borderRadius: '20px',
+                  backgroundColor: "white",
+                  borderWidth: "5px",
+                  }}>
+                    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0U4cG8B6jPetIXO0a3fVjyLKMVU4nZCtmkfNizouttjEw9KaRJCRj_1se_Jrek8ptoMY7tnkdo?gv=true" style={{border: "0"}} width="100%" height="600" frameborder="0"></iframe>
+                </Box>
+                
+              </>
+            </Card>
+            <Button onClick={handleToggleServices} sx={{width: "80%", margin: "auto"}}>Contact Information</Button>
+            </>
+        )}
         </div>
       </>
     ) : (
@@ -319,6 +414,7 @@ export default function BasicCard() {
         <Typography sx={{ fontFamily: "san-serif", color: "white", fontSize: "30px"}}>Feeling tight and don't want to stretch on your own?</Typography>
         <br></br>
         <Typography sx={{color: "white", fontSize: "25px"}}>Come get assisted stretching!</Typography>
+        <br></br>
         <Typography sx={{color: "white", fontSize: "25px"}}>I stretch each muscle group head to toe, finding any imbalances and working towards better flexibility and movement goals!</Typography>
       </div>
       </>
@@ -340,6 +436,7 @@ export default function BasicCard() {
         <Typography sx={{ fontFamily: "san-serif", color: "white", fontSize: "30px", fontStyle: "bold"}}>Do you have shooting pain or a dull ache somewhere in your muscles?</Typography>
         <br></br>
         <Typography sx={{color: "white", fontSize: "25px"}}>NMT is for you!</Typography>
+        <br></br>
         <Typography sx={{color: "white", fontSize: "25px"}}>Provides a variety of assessments that gives a base plan to ensure we are breaking down the culprits causing your pain! Usually requires multiple sessions to see max results.</Typography>
       </div>
       </>
@@ -363,6 +460,7 @@ export default function BasicCard() {
         <Typography sx={{ fontFamily: "san-serif", color: "white", fontSize: "30px", fontStyle: "bold"}}>I come to you in the comfort of own home!</Typography>
         <br></br>
         <Typography sx={{color: "white", fontSize: "25px"}}>I bring my own table and supplies!</Typography>
+        <br></br>
         <Typography sx={{color: "white", fontSize: "25px"}}>Utilizing a wide variety of soft tissue techniques to ensure a relaxing and effective massage</Typography>
       </div>
       </>
