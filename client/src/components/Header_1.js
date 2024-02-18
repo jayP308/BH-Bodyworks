@@ -16,6 +16,20 @@ import { useMediaQuery } from 'usehooks-ts'
 const Header = () => {
   const matches = useMediaQuery('(max-width: 480px)')
 
+  const handleServicesTab = () => {
+    const servicesElement = document.getElementById('services');
+    if (servicesElement) {
+      servicesElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  const handleContactsTab = () => {
+    const contactsElement = document.getElementById('social-media');
+    if (contactsElement) {
+      contactsElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   return (
     <>
       {matches ? (
@@ -63,10 +77,10 @@ const Header = () => {
                 '& > *': { flexGrow: 1, fontWeight: 'lg' },
               }}
             >
-              <Button href="#services" style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Services & Appointments</Button>
+              <Button onClick={handleServicesTab} style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Services & Appointments</Button>
               
               
-              <Button href="#social-media" style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Contact Information</Button>
+              <Button onClick={handleContactsTab} style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Contact Information</Button>
               
             </Box>
           </Box>
@@ -124,10 +138,10 @@ const Header = () => {
                 '& > *': { flexGrow: 1, fontWeight: 'lg' },
               }}
             >
-              <Button href="#services" style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Services & Appointments</Button>
+              <Button onClick={handleServicesTab}  style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Services & Appointments</Button>
               
               
-              <Button href="#social-media" style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Contact Information</Button>
+              <Button onClick={handleContactsTab} style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Contact Information</Button>
               
             </Box>
           </Box>
