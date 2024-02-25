@@ -313,7 +313,7 @@ export default function BasicCard() {
       </>
     ) : (
     <>
-    <Button onClick={handleTopOfPage} sx={{width: "25%", margin: "auto"}}>Back To Home</Button>
+    <Button onClick={handleTopOfPage} sx={{width: "25%", margin: "auto", border: "solid", borderRadius: "20px", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)', backgroundColor: "transparent"}}>Back To Home</Button>
     <div style={{
         display: "flex",
         justifyContent: 'center',
@@ -335,7 +335,7 @@ export default function BasicCard() {
           alt=""
         />
       </AspectRatio>
-      <Button href="#massage-description" onClick={handleToggleTypography}>Read More</Button>
+      <Button href="#massage-description" onClick={handleToggleTypography} sx={{border: "solid", borderRadius: "12px", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)', backgroundColor: "#fed5bd"}}>Read More</Button>
   
     </Card>
 

@@ -296,28 +296,7 @@ const Home = () => {
                 </Sheet>
             </div>
             
-            <hr id="type-of-massages" style={{width: '65%', border: 'double', color: "rgba(170, 75, 110, 0.75)", margin: "auto"}}/>
-            <Sheet
-                sx={{
-                  width: 800,
-                  mx: 'auto', // margin left & right
-                  my: 2, // margin top & bottom
-                  py: 3, // padding top & bottom
-                  px: 2, // padding left & right
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: 2,
-                  borderRadius: '20px',
-                  boxShadow: 'md',
-                  textAlign: 'center',
-                  backgroundColor: "rgba(0, 0, 128, 0.8)",
-                  borderColor: 'transparent',
-                }}
-                variant="outlined"
-              > 
-              <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier" }}>Reviews</h1>
-                
-              </Sheet>
+            <hr id="type-of-massages" style={{width: '65%', border: 'double', color: "transparent", margin: "auto"}}/>
             <div
                   sx={{
                     flexGrow: 1,
@@ -331,6 +310,7 @@ const Home = () => {
                     backgroundColor: "rgba(0, 0, 128, 0.8)"
                   }}
             >
+              
               <Typography style={{fontFamily: 'monospace', fontSize: '20px'}}></Typography>
               <Box sx={{ 
                   width: "80%",
@@ -338,13 +318,34 @@ const Home = () => {
                   margin: 'auto',
                   marginTop: "40px",
                   marginBottom: "40px",
-                  backgroundColor: "rgba(0, 0, 128, 0.8)",
+                  backgroundColor: "#edbf9e",
+                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)",
                   borderRadius: '20px',
                   borderColor: 'rgba(170, 75, 110, 0.75)',
                   borderWidth: "5px",
-                  color: "rgb(144, 238, 144)"
+                  color: "#397249",
                   }}>
-                    
+                    <Sheet
+                      sx={{
+                        width: 800,
+                        mx: 'auto', // margin left & right
+                        my: 2, // margin top & bottom
+                        py: 3, // padding top & bottom
+                        px: 2, // padding left & right
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: 2,
+                        borderRadius: '20px',
+                        boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.4)",
+                        textAlign: 'center',
+                        backgroundColor: "#f3d5bd",
+                        borderColor: 'transparent',
+                      }}
+                      variant="outlined"
+                    > 
+                    <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "#397249", fontFamily: "courier" }}>Reviews</h1>
+                      
+                    </Sheet>
                   <Paper
                       square
                       elevation={0}
@@ -423,7 +424,7 @@ const Home = () => {
                           size="small"
                           onClick={handleNext}
                           disabled={activeStep === maxSteps - 1}
-                          style={{color: "rgb(144, 238, 144)"}}
+                          style={{color: "#628b61"}}
                       >
                           Next
                           {theme.direction === 'rtl' ? (
@@ -448,7 +449,7 @@ const Home = () => {
 
               
             </div>
-            <hr id="services" style={{width: '65%', border: 'double', color: 'rgba(170, 75, 110, 0.75)', margin: "auto"}}/>
+            <hr id="services" style={{width: '65%', border: 'double', color: "transparent", margin: "auto"}}/>
             <CssVarsProvider>
             <main>
               <Sheet
@@ -490,15 +491,15 @@ const Home = () => {
                   flexDirection: 'column',
                   gap: 2,
                   borderRadius: 'sm',
-                  boxShadow: 'md',
+                  boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.4)",
                   textAlign: 'center',
-                  backgroundColor: "rgba(0, 0, 128, 0.8)",
+                  backgroundColor: "#f3d5bd",
                   borderRadius: '20px',
                   borderColor: 'transparent',
                   borderWidth: "5px"
                 }}
                 variant="outlined"
-              > <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "rgb(144, 238, 144)", fontFamily: "courier"}}>Contact Information</h1>
+              > <h1 style={{ fontWeight: "10px", fontSize: "45px", color: "#397249", fontFamily: "courier"}}>Contact Information</h1>
               
               </Sheet>
             <Footer/>

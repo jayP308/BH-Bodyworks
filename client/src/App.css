@@ -10,7 +10,7 @@ html, body {
 
 
 body {
-    background-image: url('./assets/images/FullLogo.png');
+    background-color: #edbf9ed7;
     background-repeat: none;
     background-size: cover;
     background-attachment: fixed;

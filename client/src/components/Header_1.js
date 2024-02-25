@@ -107,25 +107,26 @@ const Header = () => {
             overflow: 'hidden',
             '& button': { borderRadius: 'xl' },
             height: "500px",
-            backgroundColor: "rgba(0, 0, 128, 0.8)"
+            backgroundColor: "#f3d5bd",
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
           }}
         >
             
           <Box sx={{ zIndex: 1, position: 'relative',}}>
-            <Typography level="h2">Bethany Hernandez (Cert # 91433)</Typography>
-            <Typography sx={{ mt: 0.5, mb: 2, width: "50%", fontStyle:'oblique'}}>
+            <Typography level="h2" style={{color: "#397249",}}>Bethany Hernandez (Cert # 91433)</Typography>
+            <Typography sx={{color: "#628b61", mt: 0.5, mb: 2, width: "50%", fontStyle:'oblique'}}>
                 (Certified Massage Therapist)
             </Typography>
             <br/>
-            <Typography sx={{ mb: 1, width: "50%",}}>
+            <Typography sx={{color: "#397249", mb: 1, width: "50%",}}>
                 Get out of your head and into your body
             </Typography>
             <br/>
-            <Typography sx={{ mb: 2, width: "50%",}}>
+            <Typography sx={{color: "#397249", mb: 2, width: "50%",}}>
                 I help you become aware of your body and leverage the mind body connection to live a happier healthy lifestyle.
             </Typography>
             <br/>
-            <Typography sx={{  mb: 2, width: "50%",}}>
+            <Typography sx={{color: "#397249",  mb: 2, width: "50%",}}>
                 Your body is your main tool to navigate your life and your environment. Let me help you learn how to use it optimally.
             </Typography>
             <br/>
@@ -138,10 +139,10 @@ const Header = () => {
                 '& > *': { flexGrow: 1, fontWeight: 'lg' },
               }}
             >
-              <Button onClick={handleServicesTab}  style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Services & Appointments</Button>
+              <Button onClick={handleServicesTab}  style={{color: "#628b61", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Services & Appointments</Button>
               
               
-              <Button onClick={handleContactsTab} style={{color: "White", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Contact Information</Button>
+              <Button onClick={handleContactsTab} style={{color: "#628b61", border:'solid', borderColor: 'rgba(170, 75, 110, 0.75)',}}>Contact Information</Button>
               
             </Box>
           </Box>
